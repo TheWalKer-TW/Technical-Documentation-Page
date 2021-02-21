@@ -15,15 +15,18 @@ body {
   width: 300px;
   height: 100%;
   border-right: solid;
-  border-color: rgba(0, 22, 22, 0.4);
+  border-color: rgba(47, 51, 51, 0.514);
+  background-color: white;
+  background: white;
+  z-index: 10;
 }
 
 header {
   color: black;
   margin: 10px;
   text-align: center;
-  font-size: 1.8em;
-  font-weight: thin;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 #main-doc header {
@@ -59,12 +62,13 @@ header {
   margin-left: 310px;
   padding: 20px;
   margin-bottom: 110px;
+  width: 75%;
 }
 
 section article {
   color: #4d4e53;
   margin: 15px;
-  font-size: 0.96em;
+  font-size: 1em;
 }
 
 section li {
@@ -79,22 +83,26 @@ code {
   word-break: normal;
   word-wrap: normal;
   line-height: 2;
-  background-color: #f7f7f7;
+  background-color: #cfcece69;
   padding: 15px;
   margin: 10px;
-  border-radius: 5px;
+  border-radius: 0.5rem;
+}
+img{
+  max-width: 80%;
+  border-radius: 0.5rem;
 }
 
 @media only screen and (max-width: 815px) {
   /* For mobile phones: */
   #navbar ul {
     border: 1px solid;
-    height: 207px;
+    height: 200px;
   }
 
   #navbar {
     background-color: white;
-    position: absolute;
+    position: fixed;
     top: 0;
     padding: 0;
     margin: 0;
@@ -108,7 +116,7 @@ code {
   #main-doc {
     position: relative;
     margin-left: 0px;
-    margin-top: 270px;
+    margin-top: 280px;
   }
 }
 
